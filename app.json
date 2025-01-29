@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Beefy",
+    "slug": "beefy",
+    "scheme": "beefy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "xyz.intera.beefy",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Connecting your camera allows you to scan QR codes for transactions.",
+        "NSUserTrackingUsageDescription": "We use the advertising identifier to accurately attribute app installs from ad campaigns.",
+        "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff5050"
+      },
+      "package": "xyz.intera.beefy",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#242843"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1",
+            "useFrameworks": "static"
+          },
+          "android": {
+            "extraMavenRepos": ["https://sdk.withpersona.com/android/releases"]
+          }
+        }
+      ],
+      [
+        "react-native-permissions",
+        {
+          "iosPermissions": ["Camera", "AppTrackingTransparency", "Contacts"]
+        }
+      ],
+      [
+        "react-native-auth0",
+        {
+          "domain": "auth.valora.xyz"
+        }
+      ],
+      "@interaxyz/mobile"
+    ]
+  }
+}
