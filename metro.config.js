@@ -8,7 +8,6 @@ const config = getDefaultConfig(__dirname)
 config.transformer.getTransformOptions = async () => ({
   transform: {
     experimentalImportSupport: false,
-    // Needed otherwise we get import issues because of all the cyclic imports we currently have
     inlineRequires: true,
   },
 })

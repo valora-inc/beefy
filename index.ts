@@ -7,7 +7,6 @@ if (!expoConfig) {
   throw new Error('expoConfig is not available')
 }
 
-// Create Mobile Stack app
 const App = createApp({
   registryName: 'Beefy',
   displayName: expoConfig.name,
