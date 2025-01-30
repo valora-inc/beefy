@@ -1581,10 +1581,10 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@interaxyz/mobile@^1.0.0-alpha.4":
-  version "1.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@interaxyz/mobile/-/mobile-1.0.0-alpha.4.tgz#7f91ac734daad0271effa2efac3188ec0198cc8f"
-  integrity sha512-W6tY8niZ31UYMcIEKdEgel0Wtrb/4Zvt7/83VYkaRptvH6w2eGwH4Y9kabdXODf1HDU8EbEf84nbLjYg/y8wFA==
+"@interaxyz/mobile@^1.0.0-alpha.5":
+  version "1.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@interaxyz/mobile/-/mobile-1.0.0-alpha.5.tgz#5500b3affed2a008454690fb28a5c0e18ea9c140"
+  integrity sha512-wcBRIlScj/y5CD4Rc9VTtNdWz+toRu9I+CS6XMubM3VQKll3y7PyIH7resoeiVNizRDd8KE0qzwHNIXufxHA1A==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^0.7.0"
