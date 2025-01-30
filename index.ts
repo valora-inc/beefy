@@ -1,6 +1,8 @@
 import { createApp } from '@interaxyz/mobile'
 import { registerRootComponent } from 'expo'
 import Constants from 'expo-constants'
+import ActivityIcon from './assets/ActivityTabIcon'
+import WelcomeLogo from './assets/WelcomeLogo'
 
 const expoConfig = Constants.expoConfig
 if (!expoConfig) {
@@ -25,7 +27,14 @@ const App = createApp({
     tabs: ({ defaultTabs }) => {
       return {
         // TODO: add earn tab and initial route to it
-        screens: [defaultTabs.wallet, defaultTabs.activity],
+        screens: [
+          defaultTabs.wallet,
+          {
+            ...defaultTabs.activity,
+            label: (t) => t('activity'),
+            icon: ActivityIcon,
+          },
+        ],
       }
     },
   },
@@ -82,6 +91,10 @@ const App = createApp({
         brandGradientLeft: '#FFFFFF',
         brandGradientRight: '#FFFFFF',
         contentOnboardingComplete: '#1AB775',
+      },
+      assets: {
+        welcomeLogo: WelcomeLogo,
+        welcomeBackgroundImage: undefined,
       },
     },
   },
