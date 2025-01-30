@@ -20,7 +20,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ff5050"
+        "backgroundColor": "#242843"
       },
       "package": "xyz.intera.beefy",
       "permissions": [
