@@ -14,7 +14,8 @@
       "infoPlist": {
         "NSCameraUsageDescription": "Connecting your camera allows you to scan QR codes for transactions.",
         "NSUserTrackingUsageDescription": "We use the advertising identifier to accurately attribute app installs from ad campaigns.",
-        "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account."
+        "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
