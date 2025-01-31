@@ -1372,10 +1372,10 @@
   dependencies:
     nanoid "^3.3.1"
 
-"@interaxyz/mobile@^1.0.0-alpha.8":
-  version "1.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@interaxyz/mobile/-/mobile-1.0.0-alpha.8.tgz#323b5ac867354c513740611fa63e35190161702e"
-  integrity sha512-beU+4GhwtG6tsXoddGohLKW5P+u8UcgiZy9HuRjxPClvRVhiBBpZE9ZvWJOA2Pj7PKPgJalCGOCPK9e0C9iPAg==
+"@interaxyz/mobile@^1.0.0-alpha.10":
+  version "1.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@interaxyz/mobile/-/mobile-1.0.0-alpha.10.tgz#f8d5a64673c844206155e2636dd64d7a41a01ef8"
+  integrity sha512-h9yl7P6RcGbfmnhuwmDHGwmyamDalCnnM968gUF7mcZFD8TFIemMSuq+41cSmROLKA1Wildv4yyd+o+B8jslCg==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^0.7.0"
