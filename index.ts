@@ -95,6 +95,7 @@ const App = createApp({
       assets: {
         welcomeLogo: WelcomeLogo,
         welcomeBackgroundImage: undefined,
+        onboardingSuccessImage: require('./assets/cow-spaceship.png'),
       },
     },
   },
