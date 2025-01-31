@@ -65,6 +65,12 @@
         }
       ],
       "@interaxyz/mobile"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "daf99150-342e-4a9b-bfd5-61838b5e28c8"
+      }
+    },
+    "owner": "intera"
   }
 }
