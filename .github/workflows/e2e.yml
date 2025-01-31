@@ -22,6 +22,7 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+      - run: yarn install
       - run: eas build --platform android --profile e2e --local
 
   e2e-ios:
@@ -37,4 +38,5 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+      - run: yarn install
       - run: eas build --platform android --profile e2e --local
