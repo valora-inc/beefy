@@ -22,6 +22,12 @@ const App = createApp({
   },
   features: {
     cloudBackup: true,
+    statsig: {
+      apiKey: 'statsig-api-keu'
+    },
+    segment: {
+      apiKey: 'segment-api-key'
+    }
   },
   screens: {
     tabs: ({ defaultTabs }) => {
@@ -29,12 +35,14 @@ const App = createApp({
         // TODO: add earn tab and initial route to it
         screens: [
           defaultTabs.wallet,
+          defaultTabs.earn,
           {
             ...defaultTabs.activity,
             label: (t) => t('activity'),
             icon: ActivityIcon,
           },
         ],
+        initialScreen: 'earn',
       }
     },
   },
