@@ -64,7 +64,13 @@
           "domain": "auth.valora.xyz"
         }
       ],
-      "@interaxyz/mobile"
+      "@interaxyz/mobile",
+      [
+        "./plugins/withCustomGradleProperties",
+        {
+          "org.gradle.jvmargs": "-Xmx4096m -XX:+HeapDumpOnOutOfMemoryError"
+        }
+      ]
     ],
     "extra": {
       "eas": {
