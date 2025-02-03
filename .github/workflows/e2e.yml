@@ -47,6 +47,7 @@ jobs:
         with:
           node-version-file: "package.json"
           check-latest: true
+      - run: brew install fastlane
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
