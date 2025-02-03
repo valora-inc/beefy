@@ -16,14 +16,31 @@ concurrency:
 
 jobs:
   e2e-android:
-    # Uncomment this to run on standard GitHub Actions runners
-    # runs-on: ubuntu-latest
+    # We use custom runners to speed up the build
+    # Replace this with `ubuntu-latest` to run on standard GitHub Actions runners
     runs-on:
       - nscloud-ubuntu-22.04-amd64-16x64-with-cache
       - nscloud-cache-size-20gb
       - nscloud-cache-tag-beefy-e2e-android
     steps:
       - uses: actions/checkout@v4
+      - name: Set env
+        run: |
+          ANDROID_HOME="$HOME/android-tools"
+          echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
+          echo "$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_PATH
+          echo "$ANDROID_HOME/platform-tools" >> $GITHUB_PATH
+          echo "$ANDROID_HOME/emulator" >> $GITHUB_PATH
+      # See https://namespace.so/docs/actions/nscloud-cache-action
+      - name: Cache
+        uses: namespacelabs/nscloud-cache-action@v1
+        with:
+          cache: gradle
+          path: ${{ env.ANDROID_HOME}}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
       - uses: actions/setup-node@v4
         id: setup-node
         with:
@@ -37,17 +54,18 @@ jobs:
       - run: eas build --platform android --profile e2e --local
 
   e2e-ios:
-    # Uncomment this to run on standard GitHub Actions runners
+    # We use custom runners to speed up the build
+    # Replace this with `macos-14` to run on standard GitHub Actions runners
     # runs-on: macos-14
     runs-on: ios-e2e-group
     steps:
       - uses: actions/checkout@v4
+      - run: brew install fastlane cocoapods
       - uses: actions/setup-node@v4
         id: setup-node
         with:
           node-version-file: "package.json"
           check-latest: true
-      - run: brew install fastlane cocoapods
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
