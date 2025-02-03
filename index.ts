@@ -22,19 +22,27 @@ const App = createApp({
   },
   features: {
     cloudBackup: true,
+    // TODO: pass these using expo public env variables
+    statsig: {
+      apiKey: 'statsig-api-key'
+    },
+    segment: {
+      apiKey: 'segment-api-key'
+    }
   },
   screens: {
     tabs: ({ defaultTabs }) => {
       return {
-        // TODO: add earn tab and initial route to it
         screens: [
           defaultTabs.wallet,
+          {...defaultTabs.earn, label: (t) => t('home')},
           {
             ...defaultTabs.activity,
             label: (t) => t('activity'),
             icon: ActivityIcon,
           },
         ],
+        initialScreen: 'earn',
       }
     },
   },
