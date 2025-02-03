@@ -47,7 +47,7 @@ jobs:
         with:
           node-version-file: "package.json"
           check-latest: true
-      - run: brew install fastlane
+      - run: brew install fastlane cocoapods
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
