@@ -6,21 +6,11 @@
     "e2e": {
       "withoutCredentials": true,
       "android": {
-        "buildType": "apk",
-        "image": "latest"
+        "buildType": "apk"
       },
       "ios": {
-        "simulator": true,
-        "image": "latest"
+        "simulator": true
       }
-    },
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
-      "distribution": "internal"
-    },
-    "production": {}
+    }
   }
 }
