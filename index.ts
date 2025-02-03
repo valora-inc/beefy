@@ -32,7 +32,6 @@ const App = createApp({
   screens: {
     tabs: ({ defaultTabs }) => {
       return {
-        // TODO: add earn tab and initial route to it
         screens: [
           defaultTabs.wallet,
           {...defaultTabs.earn, label: (t) => t('home')},
