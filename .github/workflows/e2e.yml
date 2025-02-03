@@ -16,7 +16,12 @@ concurrency:
 
 jobs:
   e2e-android:
-    runs-on: ubuntu-latest
+    # Uncomment this to run on standard GitHub Actions runners
+    # runs-on: ubuntu-latest
+    runs-on:
+      - nscloud-ubuntu-22.04-amd64-16x64-with-cache
+      - nscloud-cache-size-20gb
+      - nscloud-cache-tag-beefy-e2e-android
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,7 +37,9 @@ jobs:
       - run: eas build --platform android --profile e2e --local
 
   e2e-ios:
-    runs-on: macos-14
+    # Uncomment this to run on standard GitHub Actions runners
+    # runs-on: macos-14
+    runs-on: ios-e2e-group
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
