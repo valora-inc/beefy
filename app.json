@@ -14,7 +14,8 @@
       "infoPlist": {
         "NSCameraUsageDescription": "Connecting your camera allows you to scan QR codes for transactions.",
         "NSUserTrackingUsageDescription": "We use the advertising identifier to accurately attribute app installs from ad campaigns.",
-        "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account."
+        "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -64,7 +65,19 @@
           "domain": "auth.valora.xyz"
         }
       ],
-      "@interaxyz/mobile"
-    ]
+      "@interaxyz/mobile",
+      [
+        "./plugins/withCustomGradleProperties",
+        {
+          "org.gradle.jvmargs": "-Xmx4096m -XX:+HeapDumpOnOutOfMemoryError"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "daf99150-342e-4a9b-bfd5-61838b5e28c8"
+      }
+    },
+    "owner": "intera"
   }
 }
