@@ -22,8 +22,9 @@ const App = createApp({
   },
   features: {
     cloudBackup: true,
+    // TODO: pass these using expo public env variables
     statsig: {
-      apiKey: 'statsig-api-keu'
+      apiKey: 'statsig-api-key'
     },
     segment: {
       apiKey: 'segment-api-key'
