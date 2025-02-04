@@ -3,6 +3,7 @@ import { registerRootComponent } from 'expo'
 import Constants from 'expo-constants'
 import ActivityIcon from './assets/ActivityTabIcon'
 import WelcomeLogo from './assets/WelcomeLogo'
+import BeefyLogo from './assets/BeefyLogo'
 import ShakingCowHead from './assets/ShakingCowHead'
 
 const expoConfig = Constants.expoConfig
@@ -105,7 +106,9 @@ const App = createApp({
         welcomeLogo: WelcomeLogo,
         welcomeBackgroundImage: undefined,
         onboardingSuccessImage: require('./assets/cow-spaceship.png'),
+        tabHeaderLogo: BeefyLogo
         noEarnPoolsLogo: ShakingCowHead
+        tabHeaderLogo: BeefyLogo
       },
     },
   },
