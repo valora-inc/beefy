@@ -3,6 +3,7 @@ import { registerRootComponent } from 'expo'
 import Constants from 'expo-constants'
 import ActivityIcon from './assets/ActivityTabIcon'
 import WelcomeLogo from './assets/WelcomeLogo'
+import ShakingCowHead from './assets/ShakingCowHead'
 
 const expoConfig = Constants.expoConfig
 if (!expoConfig) {
@@ -104,9 +105,15 @@ const App = createApp({
         welcomeLogo: WelcomeLogo,
         welcomeBackgroundImage: undefined,
         onboardingSuccessImage: require('./assets/cow-spaceship.png'),
+        noEarnPoolsLogo: ShakingCowHead
       },
     },
   },
+  experimental: {
+    earn: {
+      showSafetyScoreOnPoolCard: true,
+    }
+  }
 })
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
