@@ -10,7 +10,7 @@
     "newArchEnabled": false,
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "xyz.intera.beefy",
+      "bundleIdentifier": "xyz.divvi.beefy",
       "infoPlist": {
         "NSCameraUsageDescription": "Connecting your camera allows you to scan QR codes for transactions.",
         "NSUserTrackingUsageDescription": "We use the advertising identifier to accurately attribute app installs from ad campaigns.",
@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#242843"
       },
-      "package": "xyz.intera.beefy",
+      "package": "xyz.divvi.beefy",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.ACCESS_NETWORK_STATE",
@@ -65,7 +65,7 @@
           "domain": "auth.valora.xyz"
         }
       ],
-      "@interaxyz/mobile",
+      "@divvi/mobile",
       [
         "./plugins/withCustomGradleProperties",
         {
@@ -78,6 +78,6 @@
         "projectId": "daf99150-342e-4a9b-bfd5-61838b5e28c8"
       }
     },
-    "owner": "intera"
+    "owner": "divvi"
   }
 }

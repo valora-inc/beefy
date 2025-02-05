@@ -13,7 +13,8 @@
     "e2e:packager": "EXPO_PUBLIC_MOBILE_STACK_E2E=true yarn expo start"
   },
   "dependencies": {
-    "@interaxyz/mobile": "^1.0.0-alpha.13",
+    "@divvi/mobile": "^1.0.0-alpha.4",
+    "@interaxyz/react-native-webview": "^13.13.4",
     "@react-native-async-storage/async-storage": "^2.1.0",
     "@react-native-clipboard/clipboard": "^1.15.0",
     "@react-native-community/netinfo": "^11.4.1",
@@ -79,8 +80,7 @@
     "react-native-simple-toast": "^3.3.1",
     "react-native-sms-retriever": "^1.1.1",
     "react-native-svg": "^15.7.1",
-    "react-native-video": "^6.6.4",
-    "react-native-webview": "^13.12.5"
+    "react-native-video": "^6.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

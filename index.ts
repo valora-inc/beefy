@@ -1,4 +1,4 @@
-import { createApp } from '@interaxyz/mobile'
+import { createApp } from '@divvi/mobile'
 import { registerRootComponent } from 'expo'
 import Constants from 'expo-constants'
 import ActivityIcon from './assets/ActivityTabIcon'
