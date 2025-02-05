@@ -106,9 +106,8 @@ const App = createApp({
         welcomeLogo: WelcomeLogo,
         welcomeBackgroundImage: undefined,
         onboardingSuccessImage: require('./assets/cow-spaceship.png'),
-        tabHeaderLogo: BeefyLogo
-        noEarnPoolsLogo: ShakingCowHead
-        tabHeaderLogo: BeefyLogo
+        tabHeaderLogo: BeefyLogo,
+        noEarnPoolsLogo: ShakingCowHead,
       },
     },
   },
