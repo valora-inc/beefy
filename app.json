@@ -65,7 +65,7 @@
           "domain": "auth.valora.xyz"
         }
       ],
-      "@interaxyz/mobile",
+      "@divvi/mobile",
       [
         "./plugins/withCustomGradleProperties",
         {
