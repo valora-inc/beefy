@@ -794,7 +794,20 @@
     "@babel/parser" "^7.25.9"
     "@babel/types" "^7.25.9"
 
-"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3", "@babel/traverse@^7.25.3", "@babel/traverse@^7.25.9", "@babel/traverse@^7.26.5", "@babel/traverse@^7.26.7":
+"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.7.tgz#99a0a136f6a75e7fb8b0a1ace421e0b25994b8bb"
+  integrity sha512-1x1sgeyRLC3r5fQOM0/xtQKsYjyxmFjaOrLJNtZ81inNjyJHGIolTULPiSc/2qe1/qfpFLisLQYFnnZl7QoedA==
+  dependencies:
+    "@babel/code-frame" "^7.26.2"
+    "@babel/generator" "^7.26.5"
+    "@babel/parser" "^7.26.7"
+    "@babel/template" "^7.25.9"
+    "@babel/types" "^7.26.7"
+    debug "^4.3.1"
+    globals "^11.1.0"
+
+"@babel/traverse@^7.25.3", "@babel/traverse@^7.25.9", "@babel/traverse@^7.26.5", "@babel/traverse@^7.26.7":
   version "7.26.7"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.7.tgz#99a0a136f6a75e7fb8b0a1ace421e0b25994b8bb"
   integrity sha512-1x1sgeyRLC3r5fQOM0/xtQKsYjyxmFjaOrLJNtZ81inNjyJHGIolTULPiSc/2qe1/qfpFLisLQYFnnZl7QoedA==
@@ -841,6 +854,68 @@
   integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
+
+"@divvi/mobile@^1.0.0-alpha.4":
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@divvi/mobile/-/mobile-1.0.0-alpha.4.tgz#7b62c69f4fa8eb57833fda06e70a6f473168e3f5"
+  integrity sha512-SXKCYYvbugcrmagnQXmd4EcUueYhQ9Pqkzv7k/+P9JUnmbygk76IlXpRvZgMA0d7IM+oZD0ZySRIciGix5QVSw==
+  dependencies:
+    "@badrap/result" "~0.2.13"
+    "@crowdin/ota-client" "^0.7.0"
+    "@fiatconnect/fiatconnect-sdk" "^0.5.66"
+    "@fiatconnect/fiatconnect-types" "^13.3.10"
+    "@gorhom/bottom-sheet" "^5.0.6"
+    "@interaxyz/react-navigation-bottom-sheet" "^0.3.2"
+    "@json-rpc-tools/utils" "^1.7.6"
+    "@noble/secp256k1" "^1.7.1"
+    "@reduxjs/toolkit" "^2.5.0"
+    "@scure/bip39" "^1.5.0"
+    "@sentry/react-native" "^5.36.0"
+    "@toruslabs/constants" "^14.2.0"
+    "@toruslabs/fetch-node-details" "^14.2.0"
+    "@toruslabs/torus.js" "^15.1.1"
+    "@walletconnect/utils" "^2.16.2"
+    "@walletconnect/web3wallet" "^1.15.2"
+    bignumber.js "^9.1.2"
+    country-data "^0.0.31"
+    date-fns "^4.1.0"
+    dot-prop-immutable "^2.1.1"
+    fast-levenshtein "^3.0.0"
+    fp-ts "2.16.9"
+    futoin-hkdf "^1.5.3"
+    fuzzysort "^3.1.0"
+    google-libphonenumber "^3.2.40"
+    i18next "^24.1.0"
+    ibantools "^4.5.1"
+    intl-pluralrules "^2.0.1"
+    io-ts "2.2.22"
+    is-ip "^3.1.0"
+    jwt-decode "^4.0.0"
+    lodash "^4.17.21"
+    react-async-hook "^4.0.0"
+    react-i18next "^15.2.0"
+    react-native-android-open-settings "^1.3.0"
+    react-native-modal "^13.0.1"
+    react-native-picker-select "^9.3.1"
+    react-native-platform-touchable "^1.1.1"
+    react-native-qrcode-svg "^6.3.12"
+    react-native-skeleton-placeholder "^5.2.4"
+    react-native-url-polyfill "^2.0.0"
+    react-redux "^9.2.0"
+    redux "^5.0.1"
+    redux-persist "^6.0.0"
+    redux-persist-fs-storage "^1.3.0"
+    redux-saga "^1.3.0"
+    reselect "^4.1.8"
+    seedrandom "^3.0.5"
+    statsig-react-native "^4.15.0"
+    svgs "^4.2.0"
+    tslib "^2.8.1"
+    typed-redux-saga "^1.5.0"
+    uuid "^10.0.0"
+    victory-native "^36.9.2"
+    viem "^2.21.55"
+    web3-utils "^4.3.3"
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
@@ -1372,67 +1447,18 @@
   dependencies:
     nanoid "^3.3.1"
 
-"@interaxyz/mobile@^1.0.0-alpha.13":
-  version "1.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/@interaxyz/mobile/-/mobile-1.0.0-alpha.13.tgz#4f34025ec68f528b9dd6aab4bb5a59e043cff46b"
-  integrity sha512-1oeA6zTMZR1/sAA5MeD3Xu7cA3detH/Rlf0/DAxMYLR4yiEEnbPJLlou9W1S2p3j5ipOA2j2FCuCS00zCJScMw==
+"@interaxyz/react-native-webview@^13.13.4":
+  version "13.13.4"
+  resolved "https://registry.yarnpkg.com/@interaxyz/react-native-webview/-/react-native-webview-13.13.4.tgz#a0528e4515e305edd3395e286b19c335ec08a90d"
+  integrity sha512-/TdnLQGbQ7ajYTc7KaTJ0DKPlmdIEv23IGdFpdsAf5A3nyGjsFelTapyMttRsKyqpsS6DRdUHwrUvZScaiFGIw==
   dependencies:
-    "@badrap/result" "~0.2.13"
-    "@crowdin/ota-client" "^0.7.0"
-    "@fiatconnect/fiatconnect-sdk" "^0.5.66"
-    "@fiatconnect/fiatconnect-types" "^13.3.10"
-    "@gorhom/bottom-sheet" "^5.0.6"
-    "@json-rpc-tools/utils" "^1.7.6"
-    "@noble/secp256k1" "^1.7.1"
-    "@reduxjs/toolkit" "^2.5.0"
-    "@scure/bip39" "^1.5.0"
-    "@sentry/react-native" "^5.36.0"
-    "@th3rdwave/react-navigation-bottom-sheet" "^0.3.2"
-    "@toruslabs/constants" "^14.2.0"
-    "@toruslabs/fetch-node-details" "^14.2.0"
-    "@toruslabs/torus.js" "^15.1.1"
-    "@walletconnect/utils" "^2.16.2"
-    "@walletconnect/web3wallet" "^1.15.2"
-    bignumber.js "^9.1.2"
-    country-data "^0.0.31"
-    date-fns "^4.1.0"
-    dot-prop-immutable "^2.1.1"
-    fast-levenshtein "^3.0.0"
-    fp-ts "2.16.9"
-    futoin-hkdf "^1.5.3"
-    fuzzysort "^3.1.0"
-    google-libphonenumber "^3.2.40"
-    i18next "^24.1.0"
-    ibantools "^4.5.1"
-    intl-pluralrules "^2.0.1"
-    io-ts "2.2.22"
-    is-ip "^3.1.0"
-    jwt-decode "^4.0.0"
-    lodash "^4.17.21"
-    react-async-hook "^4.0.0"
-    react-i18next "^15.2.0"
-    react-native-android-open-settings "^1.3.0"
-    react-native-modal "^13.0.1"
-    react-native-picker-select "^9.3.1"
-    react-native-platform-touchable "^1.1.1"
-    react-native-qrcode-svg "^6.3.12"
-    react-native-skeleton-placeholder "^5.2.4"
-    react-native-url-polyfill "^2.0.0"
-    react-redux "^9.2.0"
-    redux "^5.0.1"
-    redux-persist "^6.0.0"
-    redux-persist-fs-storage "^1.3.0"
-    redux-saga "^1.3.0"
-    reselect "^4.1.8"
-    seedrandom "^3.0.5"
-    statsig-react-native "^4.15.0"
-    svgs "^4.2.0"
-    tslib "^2.8.1"
-    typed-redux-saga "^1.5.0"
-    uuid "^10.0.0"
-    victory-native "^36.9.2"
-    viem "^2.21.55"
-    web3-utils "^4.3.3"
+    escape-string-regexp "^4.0.0"
+    invariant "2.2.4"
+
+"@interaxyz/react-navigation-bottom-sheet@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@interaxyz/react-navigation-bottom-sheet/-/react-navigation-bottom-sheet-0.3.2.tgz#e2ed37e5c407647434053d79fd4b7241fc8cab69"
+  integrity sha512-8Q8A8GmqlMF4W0f+GL9+FBFRn2syNgL8ngJyA9V3uIQskAlr4bGe25iX+UB7ccksU8BpniRcNAD6gl0vq4CnBg==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -3475,11 +3501,6 @@
   dependencies:
     "@stdlib/utils-constructor-name" "^0.0.x"
     "@stdlib/utils-global" "^0.0.x"
-
-"@th3rdwave/react-navigation-bottom-sheet@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@th3rdwave/react-navigation-bottom-sheet/-/react-navigation-bottom-sheet-0.3.2.tgz#b7999322d54cb8f9a2b1b39e6c47f482407c5250"
-  integrity sha512-DEqC9tlAWE8qw5DDveyTwG0qjMJH3h8nup5Qi3TBlfW8hG9qx0N1/dfA1D+GKFEb4gw1C2/AWC6umc13z7ytoQ==
 
 "@toruslabs/bs58@^1.0.0":
   version "1.0.0"
@@ -8645,14 +8666,6 @@ react-native-video@^6.6.4:
   resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-6.10.0.tgz#35ac89761c2ffde9234ca65456db9f62342ca930"
   integrity sha512-NyDnpSBRJkj7TxMku2dEys54qKynW/l9kSPCVvayyqXWrc24cxHhLvAaxORdJDb6tS4FhUbR8tFIoOY65/XKZg==
 
-react-native-webview@^13.12.5:
-  version "13.13.1"
-  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-13.13.1.tgz#a016557afc02126175f151caaed545abbdef4eb2"
-  integrity sha512-Qwrvdwl2U2bG8QlghfRzGR/PCwKzW/cXTCR/WfMWHeGoADp2CHuCaEpfYO/HhlLLGy3Jqizsy+sjFhnKa1AgrA==
-  dependencies:
-    escape-string-regexp "^4.0.0"
-    invariant "2.2.4"
-
 react-native@0.76.5:
   version "0.76.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.76.5.tgz#3ce43d3c31f46cfd98e56ef2dfc70866c04ad185"
@@ -9391,7 +9404,16 @@ strict-uri-encode@^2.0.0:
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
   integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -9423,7 +9445,7 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -9436,6 +9458,13 @@ strip-ansi@^5.2.0:
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
   version "7.1.0"
@@ -10509,7 +10538,7 @@ wonka@^6.3.2:
   resolved "https://registry.yarnpkg.com/wonka/-/wonka-6.3.4.tgz#76eb9316e3d67d7febf4945202b5bdb2db534594"
   integrity sha512-CjpbqNtBGNAeyNS/9W6q3kSkKE52+FjIj7AkFlLr11s/VWGUu6a2CdYSdGxocIhIVjaW/zchesBQUKPVU69Cqg==
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -10522,6 +10551,15 @@ wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
