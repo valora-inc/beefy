@@ -855,10 +855,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@divvi/mobile@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@divvi/mobile/-/mobile-1.0.0-alpha.5.tgz#044ec1bad8546c3bd7b31ce8ac83bc26bdbf7578"
-  integrity sha512-4ACtqPG1cmSkhm0tSlg6d0bff0iTf4Bd6BQyAOb87X3Qfpz/RqbysxfaBE+ORC9kqQEGgpg6v+OY4/BC44c+jA==
+"@divvi/mobile@1.0.0-alpha.9":
+  version "1.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@divvi/mobile/-/mobile-1.0.0-alpha.9.tgz#e2a55c997ac87b382aec261b7c3a70a3b29e696d"
+  integrity sha512-uTmGt62ESNelZ4bVtc19UonEawi1JD8Es8bSQTjN9fDdGkkN7oVukR4fOaPAvuShM1BmzB2WCrO28q4OiPAM3g==
   dependencies:
     "@badrap/result" "~0.2.13"
     "@crowdin/ota-client" "^0.7.0"
