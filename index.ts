@@ -114,6 +114,12 @@ const App = createApp({
   experimental: {
     earn: {
       showSafetyScoreOnPoolCard: true,
+    },
+    wallet: {
+      showActionsCarousel: true,
+    },
+    activity: {
+      hideActionsCarousel: true
     }
   }
 })
