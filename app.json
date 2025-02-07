@@ -15,7 +15,12 @@
         "NSCameraUsageDescription": "Connecting your camera allows you to scan QR codes for transactions.",
         "NSUserTrackingUsageDescription": "We use the advertising identifier to accurately attribute app installs from ad campaigns.",
         "NSFaceIDUsageDescription": "This is required for you to use Face ID to secure your account.",
+        "NSContactsUsageDescription": "Adding your contacts makes it easy to send and request payments with your friends.",
+        "NSLocationWhenInUseUsageDescription": "This app requires location access to provide location-based features.",
         "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "aps-environment": "production"
       }
     },
     "android": {
