@@ -11,6 +11,10 @@
 
 Add any [tag](https://github.com/divvixyz/beefy/tags) and EAS will automatically start the release process.
 
+### From the EAS dashboard
+
+Open the [app dashboard](https://expo.dev/accounts/divvi/projects/beefy) in EAS and press "Build from GitHub". [Learn more](https://docs.expo.dev/build/building-from-github/#build-using-the-expo-website)
+
 ### Using EAS CLI
 
 Prerequisite: install EAS CLI and login to EAS. [Learn more](https://docs.expo.dev/build/setup/)
@@ -23,7 +27,3 @@ eas build --auto-submit --profile production --platform all
 
 > [!IMPORTANT]
 > The CLI-triggered build uses the local project files. Ensure you have checked out the proper branch and it is in a good state for a build.
-
-### From the EAS dashboard
-
-Open the [app dashboard](https://expo.dev/accounts/divvi/projects/beefy) in EAS and press "Build from GitHub". [Learn more](https://docs.expo.dev/build/building-from-github/#build-using-the-expo-website)
