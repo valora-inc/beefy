@@ -10,7 +10,6 @@ const expoConfig = Constants.expoConfig
 if (!expoConfig) {
   throw new Error('expoConfig is not available')
 }
-
 const App = createApp({
   registryName: 'Beefy',
   displayName: expoConfig.name,
@@ -24,12 +23,11 @@ const App = createApp({
   },
   features: {
     cloudBackup: true,
-    // TODO: pass these using expo public env variables
     statsig: {
-      apiKey: 'statsig-api-key'
+      apiKey: process.env.EXPO_PUBLIC_STATSIG_API_KEY,
     },
     segment: {
-      apiKey: 'segment-api-key'
+      apiKey: process.env.EXPO_PUBLIC_SEGMENT_API_KEY,
     }
   },
   screens: {
@@ -114,6 +112,13 @@ const App = createApp({
   experimental: {
     earn: {
       showSafetyScoreOnPoolCard: true,
+    },
+    alchemyKeys: {
+      ALCHEMY_ETHEREUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ETHEREUM_API_KEY,
+      ALCHEMY_BASE_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_BASE_API_KEY,
+      ALCHEMY_ARBITRUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ARBITRUM_API_KEY,
+      ALCHEMY_POLYGON_POS_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_POLYGON_POS_API_KEY,
+      ALCHEMY_OPTIMISM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_OPTIMISM_API_KEY,
     },
     wallet: {
       showActionsCarousel: true,
