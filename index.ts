@@ -24,18 +24,18 @@ const App = createApp({
   features: {
     cloudBackup: true,
     statsig: {
-      apiKey: process.env.EXPO_PUBLIC_STATSIG_API_KEY,
+      apiKey: process.env.EXPO_PUBLIC_STATSIG_API_KEY ?? '',
     },
     segment: {
-      apiKey: process.env.EXPO_PUBLIC_SEGMENT_API_KEY,
-    }
+      apiKey: process.env.EXPO_PUBLIC_SEGMENT_API_KEY ?? '',
+    },
   },
   screens: {
     tabs: ({ defaultTabs }) => {
       return {
         screens: [
           defaultTabs.wallet,
-          {...defaultTabs.earn, label: (t) => t('home')},
+          { ...defaultTabs.earn, label: (t) => t('home') },
           {
             ...defaultTabs.activity,
             label: (t) => t('activity'),
@@ -114,19 +114,19 @@ const App = createApp({
       showSafetyScoreOnPoolCard: true,
     },
     alchemyKeys: {
-      ALCHEMY_ETHEREUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ETHEREUM_API_KEY,
-      ALCHEMY_BASE_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_BASE_API_KEY,
-      ALCHEMY_ARBITRUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ARBITRUM_API_KEY,
-      ALCHEMY_POLYGON_POS_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_POLYGON_POS_API_KEY,
-      ALCHEMY_OPTIMISM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_OPTIMISM_API_KEY,
+      ALCHEMY_ETHEREUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ETHEREUM_API_KEY ?? '',
+      ALCHEMY_BASE_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_BASE_API_KEY ?? '',
+      ALCHEMY_ARBITRUM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_ARBITRUM_API_KEY ?? '',
+      ALCHEMY_POLYGON_POS_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_POLYGON_POS_API_KEY ?? '',
+      ALCHEMY_OPTIMISM_API_KEY: process.env.EXPO_PUBLIC_ALCHEMY_OPTIMISM_API_KEY ?? '',
     },
     wallet: {
       showActionsCarousel: true,
     },
     activity: {
-      hideActionsCarousel: true
-    }
-  }
+      hideActionsCarousel: true,
+    },
+  },
 })
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
