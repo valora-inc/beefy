@@ -9,7 +9,12 @@ interface Props {
   testID?: string
 }
 
-export default function Logo({ style, size = 32, color = '#ffffff', testID }: Props) {
+export default function Logo({
+  style,
+  size = 32,
+  color = '#ffffff',
+  testID,
+}: Props) {
   return (
     <View testID={testID} style={[styles.container, style]}>
       <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">

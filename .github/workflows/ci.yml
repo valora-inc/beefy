@@ -26,4 +26,5 @@ jobs:
           check-latest: true
       - run: yarn
       - run: yarn typecheck
-      # We'll add linting and formatting steps later
+      - run: yarn format:check
+      # We'll add linting later

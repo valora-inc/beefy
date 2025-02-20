@@ -3,7 +3,13 @@ import Svg, { ClipPath, Defs, G, Mask, Path } from 'react-native-svg'
 
 function ShakingCowHead() {
   return (
-    <Svg height={112} width={112} viewBox="0 0 112 112" fill="none" testID="ShakingCowHead">
+    <Svg
+      height={112}
+      width={112}
+      viewBox="0 0 112 112"
+      fill="none"
+      testID="ShakingCowHead"
+    >
       <G clipPath="url(#a)">
         <Mask
           id="b"
