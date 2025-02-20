@@ -10,11 +10,11 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "e2e:packager": "EXPO_PUBLIC_MOBILE_STACK_E2E=true yarn expo start"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@divvi/cookies": "^6.2.3",
-    "@divvi/mobile": "^1.0.0-alpha.18",
+    "@divvi/mobile": "^1.0.0-alpha.23",
     "@divvi/react-native-fs": "^2.20.1",
     "@divvi/react-native-keychain": "^9.2.2",
     "@interaxyz/react-native-webview": "^13.13.4",
