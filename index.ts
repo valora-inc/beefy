@@ -131,6 +131,10 @@ const App = createApp({
       hideActionsCarousel: true,
     },
   },
+  divviProtocol: {
+    protocolIds: ['beefy'],
+    referrerId: 'Beefy',
+  },
 })
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
