@@ -130,6 +130,10 @@ const App = createApp({
     activity: {
       hideActionsCarousel: true,
     },
+    zendeskConfig: {
+      apiKey: process.env.EXPO_PUBLIC_ZENDESK_API_KEY!,
+      projectName: 'valoraapp',
+    },
   },
   divviProtocol: {
     protocolIds: ['beefy'],
