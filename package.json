@@ -85,12 +85,12 @@
     "react-native-video": "^6.6.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@expo/config-plugins": "~9.0.12",
-    "@types/react": "~18.3.12",
+    "@babel/core": "^7.26.10",
+    "@expo/config-plugins": "~9.0.17",
+    "@types/react": "~18.3.18",
     "@valora/prettier-config": "^0.0.1",
     "babel-plugin-module-resolver": "^5.0.2",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.7",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
