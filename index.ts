@@ -54,6 +54,7 @@ const App = createApp({
         backgroundSecondary: '#363B63',
         backgroundTertiary: '#2D3154',
         backgroundScrim: '#000000',
+        backgroundSplash: '#242843',
         contentPrimary: '#FFFFFF',
         contentSecondary: '#B7B9C9',
         contentTertiary: '#242843',
@@ -99,6 +100,7 @@ const App = createApp({
         brandGradientLeft: '#FFFFFF',
         brandGradientRight: '#FFFFFF',
         contentOnboardingComplete: '#1AB775',
+        backgroundOnboardingComplete: '#242843',
       },
       assets: {
         brandLogo: BeefyLogo,
